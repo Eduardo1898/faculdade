@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .titulo{
+            padding: 10px;
+            font-weight: bolder;
+        }
+
+        table{
+            border-collapse: collapse;
+            
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 6px;
+        }
+
+        .center{
+            text-align: center;
+        }
+
+        .h1form{
+            margin-top: 50px;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Lista de Produtos</h1>
+
+    <table>
+        <tr>
+            <td class="titulo">Produto</td>
+            <td class="titulo">Preço</td>
+            <td class="titulo">Quantidade em Estoque</td>
+        </tr>
+        <tr>
+            <td>Notebook</td>
+            <td>R$ 3.500.00</td>
+            <td class="center">12</td>
+        </tr>
+        <tr>
+            <td>Mouse Gamer</td>
+            <td>R$ 120,00</td>
+            <td class="center">30</td>
+        </tr>
+        <tr>
+            <td>Teclado Mecânico</td>
+            <td>R$ 280,00</td>
+            <td class="center">20</td>
+        </tr>
+    </table>
+
+
+    <h1 class="h1form">Formulário do Cliente</h1>
+    <form action="/submit_form" method="post">
+        <label for="name"> Nome do Cliente:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="produto"> Produto Desejado:</label><br>
+        <select name="produto" id="produto">
+            <option value="Notebook">Notebook</option>
+            <option value="Mouse Gamer"> Mouse Gamer</option>
+            <option value="Teclado Mecânico"> Teclado Mecânico</option><br>
+        </select><br><br>
+        <label for="quantity"> Quantidade</label><br>
+        <input type="text" id="quantity" name="quantity"><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
